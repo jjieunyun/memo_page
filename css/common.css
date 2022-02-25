@@ -1,0 +1,59 @@
+.hidden {
+    display: none;
+}
+
+#clock {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 7px gray;
+    font-size: 4em;
+}
+
+#greeting {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px gray;
+}
+
+form {
+    text-align: center;
+}
+
+
+form input[type="text"] {
+    background-color: transparent; /*배경 투명*/
+    border: none;  /*테두리 삭제*/
+    border-bottom: solid  1px white;
+}
+
+form input[type="text"]::placeholder {
+    color: white;
+    text-align: center;
+}
+
+form input[type="text"]:focus {
+    border: none;
+}
+
+form input[type="submit"] {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    margin: 30px 10px;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    width: 200px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    margin: 10px;
+    word-break: break-word;
+
+}
