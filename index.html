@@ -17,13 +17,18 @@
 
     </form>
 
-    <!--메모폼-->
+    <!--메모와 투두폼-->
     <form id="memo_form" class="hidden">  <!-- 히든 첨에 안보이게-->
         <input type="text" required placeholder= "메모를 작성해주세요.">  <!--required 빈칸 안넘어가게-->
-        <input type="submit" value="작성" >
-
+        <input type="submit" value="메모" >
+        <input id="todo_button" type="button" value="투두" >
     </form>
+    <!--투두보드-->
+    <ul class="todo" id="todo_board">
 
+    </ul>
+
+    <!--메모보드-->
     <div class="flex" id="memo_board"></div> <!--빈 div로 추가-->
 
     <!--body아래 스크립트 시작-->
@@ -31,5 +36,6 @@
     <script src="./js/memo.js"></script>
     <script src="./js/background.js"></script>
     <script src="./js/clock.js"></script>
+    <script src="./js/todo.js"></script>
 </body>
 </html>

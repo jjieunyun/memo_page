@@ -13,11 +13,11 @@ function getClock() {
     const hours = String(date.getHours()).padStart(2,"0"); 
     const minutes = String(date.getMinutes()).padStart(2,"0");
     const seconds = String(date.getSeconds()).padStart(2,"0");
-    clock.innerHTML = `${hours}:${minutes}:${seconds}`;  //html에 문자열로 넣어주어야함
+    return  `${hours}:${minutes}:${seconds}`;  //html에 문자열로 넣어주어야함
 }
 
 //2. 함수 불러와서 실행시키기
-getClock();
+clock.innerHTML = getClock();
 
 //3. setinterval을 통해 계속 바뀌게 만들기
-setInterval(getClock, 1000);
+setInterval(() => {clock.innerHTML=getClock();}, 1000);

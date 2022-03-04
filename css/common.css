@@ -17,6 +17,7 @@
 
 form {
     text-align: center;
+    margin: 20px;
 }
 
 
@@ -35,13 +36,57 @@ form input[type="text"]:focus {
     border: none;
 }
 
-form input[type="submit"] {
+form input[type="text"]:focus {
+    outline:none;
+}
+
+form input[type="submit"], form input[type="button"] {
     background-color: white;
     border: none;
     border-radius: 30px;
     padding: 5px 10px;
     margin-left: 5px;
 }
+
+form input[type="submit"]:hover {
+    background-color: lightblue;
+}
+
+form input[type="button"]:hover {
+    background-color: lightpink;
+}
+
+.todo {
+    margin-bottom: 40px ;
+    margin-top: 40px;
+}
+ul {
+    list-style-type: none;
+    margin:0px auto;
+    display: table;
+}
+
+ul li {
+    border-bottom: white 1px solid;
+    margin-top: 15px;
+    margin-right: 30px;
+    width: 400px;
+}
+
+ul li button {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+ul li button:hover {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
 
 .flex {
     display: flex;

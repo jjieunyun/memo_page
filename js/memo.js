@@ -31,8 +31,8 @@ for (let m of saveMemo) {
 
 
 //3. submit을 눌렀을때 인풋에 있는 값을 가져오는 동작을 함수로 만들기
-//메모보드에 바로 붙이는게 아니라 div태그를 가져오고 submit 했을때 value값을 가져와서 출력
-// text로 입력한 글을 div에 자동으로 추가해주기
+// 내용 : 메모보드에 바로 붙이는게 아니라 div태그를 가져오고 submit 했을때 value값을 가져와서 출력
+        // text로 입력한 글을 div에 자동으로 추가해주기
 //cf) console.log(memoInput.value) : 해당 요소 속성 확인하기
 function  memoFormSubmit (event) {
     event.preventDefault(); 
@@ -43,7 +43,7 @@ function  memoFormSubmit (event) {
     //cf)innerHTML : 추가된 memo요소를 html추가
     let memo = document.createElement("div");  
     memoBoard.appendChild(memo)  //생성된 div를 추가해줌
-    memo.innerHTML = memoInput.value;
+    memo.innerHTML = memoInput.value+ "<br><br>" + getClock();
     memoInput.value = "";   //메모를 작성하고나면 value값 초기화해서 작성된 글 없어짐
     //console.dir(memoInput);
     memoInput.autofocus = true; //autofocus 실행
